@@ -7,6 +7,7 @@ class Stats extends CI_Controller {
 
 	        $data['error_message'] = "";
                 $data['location'] = "public/contents-css/login.css";
+            $this->load->view('templates/ip');
 	        $this->load->view('templates/header',$data);
 	        $this->load->view('pages/login',$data);
 	        $this->load->view('templates/footer');
